@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CLASE 1: cambiar el título de la pestaña -->
+  <title>Cine FrayBentino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header>
+    <!-- CLASE 1: cambiar el nombre de la página -->
+    <h1>Cine FrayBentino</h1>
+    <p>El mejor lugar para empezar el día</p>
+  </header>
+
+  <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#menu">Menú</a>
+    <a href="#galeria">Galería</a>
+    <a href="#multimedia">Multimedia</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+
+    <!-- ===== INICIO ===== -->
+    <section id="inicio" class="portada">
+      <h2>¡Bienvenidos!</h2>
+      <p>Esta es la pagina web de Cine FrayBentino. Puedes encontrar información sobre nuestros servicios y productos.</p>
+      <a href="#contacto" class="boton">Conocenos</a>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section id="nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>Estos son algunos datos importantes sobre nuestra empresa.
+         Podés usar <strong>negrita</strong> y <em>cursiva</em>.</p>
+      <ul>
+        <li>Somos una empresa originada en Fray Bentos</li>
+        <li>Empezamos como estudiantes, haciendo nuestras propias peliculas</li>
+        <li>Luego decidimos hacer algo mucho mas profesional consiguiendo inversiones</li>
+      </ul>
+    </section>
+
+    <!-- ===== MENÚ (TABLA) ===== -->
+    <section id="menu">
+      <h2>Nuestros snacks para peliculas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Popcorn</td>
+            <td>Clásico para ver peliculas. Dulce o salado.</td>
+            <td>$ 90</td>
+          </tr>
+          <tr>
+            <td>Refresco</td>
+            <td>Bebida refrescante para acompañar tu película</td>
+            <td>$ 40</td>
+          </tr>
+          <tr>
+            <td>Vaso exclusivo</td>
+            <td>Un coleccionable tematizado de la pelicula que vas a ver</td>
+            <td>$ 150</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== GALERÍA (IMÁGENES) ===== -->
+    <section id="galeria">
+      <h2>Galería</h2>
+      <!-- CLASE 3: reemplazar estas imágenes por las del equipo.
+           Guardarlas en la misma carpeta y usar src="nombre.jpg" -->
+      <div class="galeria">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/a14dabf698ced0e8567571405dad14a13085b93da04a1dc4684364d01d582bba.jpg" alt="Spiderman: Brand New Day">
+        <img src="https://m.media-amazon.com/images/M/MV5BZDUxNThhYTUtYjgxNy00MGQ4LTgzOTEtZjg1YTU5NTcwNThlXkEyXkFqcGc@._V1_.jpg" alt="Moana 2">
+        <img src="https://m.media-amazon.com/images/M/MV5BNWQzNjU2MDMtNzgxOS00YzcxLWE2YjYtMzY3OTAyOGJlMmQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Supergirl">
+      </div>
+    </section>
+
+    <!-- ===== MULTIMEDIA (AUDIO Y VIDEO) ===== -->
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+
+      <h3>Audio</h3>
+      <!-- CLASE 5: agregar un archivo de audio propio (ej: audio.mp3) -->
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+
+      <h3>Video</h3>
+      <!-- CLASE 5: reemplazar el enlace por un video del equipo (VIDEO_ID) -->
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Video de presentación" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO (FORMULARIO) ===== -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="nombre@correo.com">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribí tu mensaje"></textarea>
+
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer>
+    <!-- CLASE 1: poner los nombres de los integrantes del equipo -->
+    <p>Página ficticia hecha por: Román, Ema, David, Mica, Matias | 9º1 año | Liceo N°2</p>
+  </footer>
+
+</body>
+</html>
